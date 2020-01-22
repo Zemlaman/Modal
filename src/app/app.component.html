@@ -1,0 +1,12 @@
+<div class="modal">
+<button class="button" (click)="modal()" *ngIf="click === false">
+    Click me!
+</button>
+
+<div *ngIf="click === true">
+    <app-modal></app-modal>
+</div>
+<button class="button2" (click)="exit()" *ngIf="click === true">
+    Exit
+</button>
+</div>
